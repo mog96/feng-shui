@@ -1,7 +1,7 @@
-# Feng Shui
+# feng-shui
 Proposal for an installation at the City of Palo Alto Code:ART Festival, June 1-3 2017.
 
-![Concept Sketch](https://github.com/mog96/the-delt/blob/master/feng-shui-concept-sketch.jpg)
+![Concept Sketch](https://github.com/mog96/feng-shui/blob/master/feng-shui-concept-sketch.jpg)
 
 This LED tree form is tentatively titled _Feng Shui_, shown above in its daytime form. By night, the upper lights shift to starlight colors.
 
