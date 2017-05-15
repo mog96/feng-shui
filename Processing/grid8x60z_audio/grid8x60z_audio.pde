@@ -3,6 +3,18 @@ PShader blur;
 PGraphics src;
 PGraphics pass1, pass2;
 
+/* Audio. */
+import ddf.minim.*;
+ 
+Minim minim;
+// AudioInput in;
+ 
+int cellsize = 2; // Dimensions of each cell in the grid
+ 
+AudioPlayer in;
+int mp3Index = 0;
+/* End audio. */
+
 void setup()
 {
   size(640, 320, P2D);
@@ -42,6 +54,16 @@ void setup()
 
   // Make the status LED quiet
   opc.setStatusLed(false);
+  
+  /* Audio. */
+  minim = new Minim(this);
+  //  minim.debugOn();
+ 
+  // get a line in from Minim, default bit depth is 16
+  // in = minim.getLineIn(Minim.STEREO, 800);
+  in = minim.loadFile("test.mp3", 2048);
+  in.loop();
+  /* End audio. */
 }
 
 void draw()
@@ -51,7 +73,12 @@ void draw()
   
   src.beginDraw();
   src.noStroke();
-  src.background(255, 0, 0);
+  
+  println("IN:", in.mix.get(mp3Index % 2048));
+  
+  src.background(abs(in.mix.get(mp3Index % 2048)) * 100 * 255,
+                 abs(in.mix.get(mp3Index % 2048)) * 100 * 255,
+                 abs(in.mix.get(mp3Index % 2048)) * 100 * 255);
   src.fill(255, 150);
   src.blendMode(NORMAL);
 
@@ -82,6 +109,7 @@ void draw()
   src.noLights();
   src.blendMode(ADD);
   src.fill(40, 0, 0);
+  // src.fill(abs(in.mix.get(mp3Index)) % 2048, 0, 0);
   src.rect(0, 0, width, height);
   */
 
@@ -101,4 +129,18 @@ void draw()
   pass2.endDraw();    
         
   image(pass2, 0, 0);
+  
+  /* Audio. */
+  mp3Index++;
+  /* End audio. */
+}
+void stop()
+{
+  /* Audio. */
+  // always close Minim audio classes when you are done with them
+  in.close();
+  minim.stop();
+  /* End audio. */
+ 
+  super.stop();
 }
