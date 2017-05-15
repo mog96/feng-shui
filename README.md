@@ -1,5 +1,5 @@
 # feng-shui
-Proposal for an installation at the City of Palo Alto Code:ART Festival, June 1-3 2017.
+Proposal for an installation at the City of Palo Alto [Code:ART Festival](http://www.cityofpaloalto.org/gov/depts/csd/public_art/codeart.asp), June 1-3 2017.
 
 ![Concept Sketch](https://github.com/mog96/feng-shui/blob/master/feng-shui-concept-sketch.jpg)
 
