@@ -5,7 +5,7 @@ int numStrips = 8;
 
 void setup()
 {
-  size(800, 200);
+  size(200, 800);
 
   // Load a sample image
   im = loadImage("flames.jpeg");
@@ -15,7 +15,7 @@ void setup()
 
   // Map eight 60-LED strips.
   for (int i = 0; i < numStrips; i++) {
-    opc.ledStrip(i * 60, 60, width / 2, i * height / numStrips + (height / numStrips / 2), width / 70.0, 0, false);
+    opc.ledStrip(i * 60, 60, i * width / numStrips + (width / numStrips / 2), height / 2, width / 70.0, HALF_PI, false);
   }
 }
 
