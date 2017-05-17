@@ -25,7 +25,7 @@ void draw()
   int imHeight = im.height * width / im.width;
 
   // Scroll down slowly, and wrap around
-  float speed = 0.05;
+  float speed = 0.03;
   float y = (millis() * -speed) % imHeight;
   
   // Use two copies of the image, so it seems to repeat infinitely  
