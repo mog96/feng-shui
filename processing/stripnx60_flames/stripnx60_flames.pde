@@ -17,7 +17,7 @@ void setup()
   // Map eight 60-LED strips.
   for (int i = 0; i < numStrips; i++) {
     // Vertical layout.
-    opc.ledStrip(i * 60, 60, i * width / numStrips + (width / numStrips / 2), height / 4, 5, HALF_PI, false);
+    opc.ledStrip(i * 60, 60, i * width / numStrips + (width / numStrips / 2), height / 2, height / 70, HALF_PI, false);
     
     // Horizontal layout.
     // opc.ledStrip(i * 60, 60, width / 2, i * height / numStrips + (height / numStrips / 2), width / 70.0, 0, false);
