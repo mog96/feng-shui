@@ -3,7 +3,7 @@ PShader blur;
 PGraphics src;
 PGraphics pass1, pass2;
 
-int numStrips = 8;
+int numStrips = 24;
 
 void setup()
 {
@@ -35,7 +35,7 @@ void setup()
   
   // Map eight 60-LED strips.
   for (int i = 0; i < numStrips; i++) {
-    opc.ledStrip(i * 60, 60, width / 2, i * height / numStrips + (height / numStrips / 2), height / 70.0, 0, false);
+    opc.ledStrip(i * 180, 180, width / 2, i * height / numStrips + (height / numStrips / 2), 5, 0, false);
   }
   
   float stripSpacing = 2;
