@@ -6,3 +6,5 @@ In November 2016 the City of Palo Alto Public Art Program made an open call for 
 Below is documentation of the art installation.
 
 This project would not have been possible without the dedicated time and energy of Steve Clark, who advised me on the design and engineering of this work. Steve is the manager of Stanford's Maker Space for electrical engineering, [lab64](https://ee.stanford.edu/student-resources/lab64), where I spent most of my weekends from February to June 2017 learning about electricity, designing components, and bringing this idea to life.
+
+![Night 1](https://github.com/mog96/feng-shui/blob/master/Installation%20Documentation/fs_night-1.jpg)
