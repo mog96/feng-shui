@@ -12,10 +12,4 @@ This project would not have been possible without the dedicated time and energy 
 ![Original Rendering](https://github.com/mog96/feng-shui/blob/master/Photos/fs_rendering.jpg)
 
 ## Video Documentation
-[1 of 4](https://youtu.be/oLVM5IcPVkc)
-
-[2 of 4](https://youtu.be/dPSsFCLT8qg)
-
-[3 of 4](https://youtu.be/lC7Vd3WLPtw)
-
-[4 of 4](https://youtu.be/9S1G6YgmWzg)
+[1](https://youtu.be/oLVM5IcPVkc) | [2](https://youtu.be/dPSsFCLT8qg) | [3](https://youtu.be/lC7Vd3WLPtw) | [4](https://youtu.be/9S1G6YgmWzg)
